@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #212529;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+
+    list-style: none;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 10px 20px;
+
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 55px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.desc {
+    font-size: 18px;
+    line-height: 26px;
+    color: #6C757D !important;
+}
+
+.section-padding {
+    padding: 75px 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 28px;
+    background-color: #055160;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    vertical-align: middle;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #046f85;
+}
+
+
+
+
+/* Header Section Starts */
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 65px;
+}
+
+.header .text-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+}
+
+.header .text-right .box {
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.header .header-title {
+    text-transform: capitalize;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    /* padding: 170px 0 20px;
+    padding-left: 600px; */
+    /* text-align: right; */
+    margin-bottom: 20px;
+}
+
+.header .desc {
+    /* padding-left: 650px; */
+    /* text-align: right; */
+    color: #212529;
+    margin-bottom: 20px;
+}
+
+
+
+.header .explore {
+    /* text-align: right;
+    margin-top: 20px; */
+}
+
+/* Header Section Ends */
+
+/* Failures Section Starts */
+
+.failures-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.failures-box .img-box,
+.failures-box .content-box {
+    flex-basis: 45%;
+}
+
+.failures-box .img-box {
+    background-color: #055160;
+    height: 700px;
+    width: auto;
+
+}
+
+.failures-box .img-box img {
+    /* width: 560px; */
+    width: auto;
+    height: 700px;
+
+}
+
+.failures-box .content-box .desc {
+    /* padding-right: 60px; */
+}
+
+.failures-box .content-box .list {
+    margin-top: 20px;
+}
+
+.failures-box .content-box .list li {
+    font-size: 18px;
+    line-height: 30px;
+    color: #6C757D;
+    margin-bottom: 15px;
+}
+
+.failures-box .content-box .list li i {
+    color: #055160;
+    margin-right: 10px;
+}
+
+/* Failures Section Ends */
+
+
+/* Plans Section Starts */
+
+.plans .title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.plans .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+
+.plans .box .box-items img {
+    height: 100px;
+    width: auto;
+    margin-bottom: 30px;
+}
+
+.plans .box .box-items h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+}
+
+.plans .box .box-items p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #6C757D;
+}
+
+/* Plans Section Ends */
+
+/* Call-to-action Section Starts  */
+
+.call-to-action .box {
+    background-image: url(../images/gradient1.png), url(../images/call.jpg);
+    background-repeat: no-repeat;
+    background-position: left center, center center;
+    background-size: cover;
+    padding: 80px 60px;
+    border-radius: 10px;
+}
+
+.call-to-action .box .title {
+    color: white;
+}
+
+/* Call-to-action Section Ends  */
+
+
+/* Contact Section Starts  */
+
+.contact .title {
+    text-align: center;
+}
+
+.contact .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    /* gap: 30px; */
+}
+
+.contact .box .box-items {
+    flex-basis: 45%;
+}
+
+.contact .box .box-items .map {
+    height: 100%;
+    width: 100%;
+}
+
+.contact .box .box-items form .form-input {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.contact .box .box-items form .form-input .input-control {
+    display: block;
+    font-size: 18px;
+    padding: 16px 20px;
+    border: none;
+    outline: none;
+    color: #055160;
+    background: transparent;
+    border: 2px solid #055160;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.contact .box .box-items form .form-input textarea.input-control {
+    display: block;
+    height: 150px;
+    padding-top: 15px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+/* Contact Section Ends  */
+
+
+/* Footer Section Starts  */
+
+.footer {
+    background: #055160;
+    padding: 100px 20px;
+    margin-top: 75px;
+}
+
+.footer .box {
+    display: flex;
+    justify-content: space-between
+}
+
+.footer .box .box-items {
+    flex-basis: 45%;
+}
+
+.footer .box .subscribe-items {
+    flex-basis: 35%;
+}
+
+.footer .box .box-items h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer .box .box-items p {
+    color: white !important;
+    margin-bottom: 20px;
+
+}
+
+.footer .box .box-items .icons img {
+    padding-right: 20px;
+}
+
+.footer .box .subscribe-items .subscribe {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: white;
+
+}
+
+
+.footer .box .subscribe-items form input {
+    display: block;
+    font-size: 18px;
+    padding: 16px 20px;
+    border: none;
+    outline: none;
+    color: #f7f7f7;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.footer .box .subscribe-items form input::placeholder {
+    color: #f7f7f7;
+}
+
+.footer .box .subscribe-items form .btn {
+    background: white;
+    color: #055160;
+    margin-top: 20px;
+}
+
+/* Footer Section Ends  */
