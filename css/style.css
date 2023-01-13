@@ -18,7 +18,7 @@ li {
 .container {
     max-width: 1250px;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 10px 40px;
 
 }
 
@@ -37,7 +37,7 @@ li {
 }
 
 .section-padding {
-    padding: 75px 20px;
+    padding: 75px 0px;
 }
 
 .btn {
@@ -119,7 +119,7 @@ li {
 .failures-box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 80px;
 }
 
@@ -132,19 +132,17 @@ li {
     background-color: #055160;
     height: 700px;
     width: auto;
-
+    text-align: center;
 }
 
 .failures-box .img-box img {
-    /* width: 560px; */
+
     width: auto;
     height: 700px;
 
 }
 
-.failures-box .content-box .desc {
-    /* padding-right: 60px; */
-}
+
 
 .failures-box .content-box .list {
     margin-top: 20px;
@@ -177,6 +175,7 @@ li {
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    gap: 30px;
 }
 
 
@@ -233,19 +232,20 @@ li {
 
 .contact .box {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    justify-content: center;
     margin-top: 80px;
-    /* gap: 30px; */
+
+    gap: 80px;
 }
 
 .contact .box .box-items {
     flex-basis: 45%;
 }
 
-.contact .box .box-items .map {
-    height: 100%;
+.contact .box .box-items .map iframe {
     width: 100%;
+    height: 500px;
 }
 
 .contact .box .box-items form .form-input {
@@ -264,12 +264,13 @@ li {
     background: transparent;
     border: 2px solid #055160;
     border-radius: 10px;
-    width: 100%;
+    width: 90%;
 }
 
 .contact .box .box-items form .form-input textarea.input-control {
     display: block;
     height: 150px;
+    width: 90%;
     padding-top: 15px;
     resize: none;
     margin-bottom: 20px;
@@ -296,7 +297,7 @@ li {
 }
 
 .footer .box .subscribe-items {
-    flex-basis: 35%;
+    flex-basis: 45%;
 }
 
 .footer .box .box-items h2 {
@@ -334,7 +335,7 @@ li {
     background: transparent;
     border: 2px solid white;
     border-radius: 10px;
-    width: 100%;
+    width: 90%;
 }
 
 .footer .box .subscribe-items form input::placeholder {
@@ -348,3 +349,242 @@ li {
 }
 
 /* Footer Section Ends  */
+
+
+
+
+/* Media Queries  */
+
+@media only screen and (max-width:688px) {
+    .container {
+        max-width: 98%;
+    }
+
+    .section-padding {
+        padding: 35px 0;
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .desc {
+        font-size: 14px;
+    }
+
+    .header .header-title {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .header .header-title {
+        font-size: 35px;
+    }
+
+    .header .text-right .box {
+        flex-basis: 95%;
+    }
+
+    .failures-box {
+        flex-direction: column;
+    }
+
+    .failures-box {
+        gap: 40px;
+    }
+
+    .failures-box .title {
+        text-align: center;
+    }
+
+    .failures-box .img-box {
+        height: 350px;
+    }
+
+
+    .failures-box .img-box img {
+        height: 350px;
+    }
+
+    .failures-box .title {
+        margin-bottom: 10px;
+    }
+
+    .failures-box .content-box .list li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .plans .title {
+        margin-bottom: 40px;
+    }
+
+    .plans .box {
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+
+    .contact .box {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .plans .box .box-items h2 {
+        font-size: 22px;
+    }
+
+    .plans .box .box-items p {
+        font-size: 18px;
+
+    }
+
+    .call-to-action .box {
+        padding: 40px 30px;
+
+    }
+
+    .contact .box .box-items:first-child {
+        margin-top: 50px;
+        order: 2;
+    }
+
+    .footer .box {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+
+}
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container {
+        max-width: 98%;
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .desc {
+        font-size: 14px;
+    }
+
+    .header .header-title {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .header .text-right .box {
+        flex-basis: 75%;
+    }
+
+
+    .failures-box {
+        gap: 40px;
+    }
+
+    .failures-box .title {
+        margin-bottom: 10px;
+    }
+
+    .failures-box .content-box .list li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .failures-box .img-box {
+        height: 380px;
+    }
+
+
+    .failures-box .img-box img {
+        height: 380px;
+    }
+
+    .plans .box {
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        justify-content: space-around;
+    }
+
+    .plans .box .box-items h2 {
+        font-size: 22px;
+    }
+
+    .plans .box .box-items p {
+        font-size: 18px;
+
+    }
+
+    .plans .title {
+        margin-bottom: 50px;
+    }
+
+    .contact .box {
+        gap: 40px;
+    }
+
+
+
+    .footer .box {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+
+
+}
+
+@media only screen and (min-width:993px) and (max-width:1312px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .desc {
+        font-size: 16px;
+    }
+
+
+    .header .header-title {
+        font-size: 50px;
+    }
+
+    .header .text-right .box {
+        flex-basis: 60%;
+    }
+
+    .failures-box {
+        gap: 40px;
+    }
+
+    .failures-box .img-box {
+        height: 450px;
+    }
+
+
+    .failures-box .img-box img {
+        height: 450px;
+    }
+
+    .plans .box {
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+
+    .contact .box {
+
+        gap: 40px;
+    }
+
+
+
+    .footer .box {
+        justify-content: center;
+        gap: 30px;
+    }
+}
